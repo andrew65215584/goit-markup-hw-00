@@ -145,19 +145,20 @@ svg {
 }
 .section {
 	width: 1600px;
-	padding: 200px 240px;
+	padding: 150px 240px;
 	margin-left: auto;
 	margin-right: auto;
 	background-color: var(--main-background);
+	display: flex;
+}
+
+.section:nth-child(2n) {
+	flex-direction: row-reverse;
 }
 
 .content-container {
 	width: 470px;
-
 	width: 50%;
-}
-.section-about-us {
-	display: flex;
 }
 
 .section-title {
@@ -167,11 +168,43 @@ svg {
 }
 
 .section-text {
+	width: 470px;
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 2.22;
+	margin-top: 0px;
+	margin-bottom: 70px;
 }
 
 .img {
 	width: 50%;
+}
+
+.notify-paragraph {
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.5;
+	color: #402b2b;
+	margin: 0px;
+
+	background: #ED4D4770;
+
+	padding: 30px 40px;
+	border-left: 10px solid #ed4d47;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.section-faq {
+	
+height: 1500px;
+
+
+
+transform: translateX(360); 
+
+background-image: url(../images/bcg-faq.png);
+background-repeat: no-repeat;
+background-position: right 0;
+
 }
