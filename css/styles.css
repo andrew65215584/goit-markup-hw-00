@@ -195,16 +195,74 @@ svg {
 	border-top-left-radius: 10px;
 }
 
-.section-faq {
+.section.section-faq {
+	position: relative;
+	padding-left: 240px;
+	padding-right: 0px;
+	height: 1500px;
+
+	background-image: url(../images/bcg-faq.png);
+	background-repeat: no-repeat;
+	background-position: right 0;
+}
+
+.faq-image {
+	position: absolute;
+	top: 148px;
+	right: 110px;
+}
+
+.faq-image-question {
+	position: absolute;
+	left: 788px;
+	top: 170px;
+}
+
+.faq-title {
+	position: absolute;
+	left: 240px;
+	top: 285px;
+}
+
+.faq-text {
+	position: absolute;
+	left: 240px;
+	top: 330px;
+	font-family: DM Serif Display;
+	font-size: 48px;
+	line-height: 1.39;
+	color: #402b2b;
+}
+
+.faq-list {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px;
+	padding: 0px;
+
+	position: absolute;
+    top: 735px;
+    left: 200px;
 	
-height: 1500px;
+}
 
+.faq-item {
+	margin-right: 20px;
+	margin-bottom: 10px;
+	width: calc((100% - 20px) / 2);
+	
+	
+}
 
-
-transform: translateX(360); 
-
-background-image: url(../images/bcg-faq.png);
-background-repeat: no-repeat;
-background-position: right 0;
+.faq-question {
+	margin: 0px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 1.67;
+	color: #402b2b;
+	background-color: #fff;
+	padding: 25px 35px;
+	
 
 }
