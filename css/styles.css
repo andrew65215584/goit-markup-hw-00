@@ -1,0 +1,177 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+img {
+	display: block;
+}
+svg {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+:root {
+	--main-background: #fcddd4;
+	--header-title-and-bcg-item: white;
+	--accent-text: #ee4d47;
+}
+.page {
+	background: white;
+
+	font-family: Rubik;
+	font-size: 18px;
+	color: #402b2b;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+	outline: 5px solid red;
+}
+
+.header {
+	position: relative;
+	height: 1195px;
+	width: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+	outline: 5px solid red;
+	background-color: var(--main-background);
+	background-image: linear-gradient(309deg, rgba(255, 237, 186, 1) 8%, rgba(238, 77, 71, 0.24723392775078779) 61%),
+		url(/images/scene.jpg);
+	background-repeat: no-repeat;
+}
+
+.logo {
+	fill: white;
+	width: 212px;
+	height: 50px;
+	display: block;
+	position: absolute;
+	left: 240px;
+	top: 50px;
+}
+
+.btn {
+	background: #ee4d47;
+	border-radius: 5px;
+	border: 0px;
+	padding: 20px 24px;
+	color: var(--header-title-and-bcg-item);
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.header-btn {
+	position: absolute;
+	left: 240px;
+	top: 580px;
+}
+
+.header-container {
+	display: flex;
+}
+
+.header-title {
+	font-family: DM Serif Display;
+	color: var(--header-title-and-bcg-item);
+	font-size: 100px;
+	line-height: 100%;
+	position: absolute;
+	width: 741px;
+	height: 300px;
+	left: 215px;
+	top: 170px;
+}
+
+.navigation {
+	position: absolute;
+	left: 710px;
+	top: 40px;
+}
+
+.navigation-list {
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+.navigation-item {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 19px;
+	letter-spacing: 0.05em;
+	font-style: normal;
+}
+
+.navigation-item:not(:last-child) {
+	margin-right: 90px;
+}
+
+.navigation-link {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.header__image--car {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: block;
+}
+
+.header__image--scene {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+}
+
+.header__image--people {
+	position: absolute;
+	left: 792px;
+	top: 444.78px;
+}
+.section {
+	width: 1600px;
+	padding: 200px 240px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: var(--main-background);
+}
+
+.content-container {
+	width: 470px;
+
+	width: 50%;
+}
+.section-about-us {
+	display: flex;
+}
+
+.section-title {
+	margin: 0px;
+	color: var(--accent-text);
+	margin-bottom: 40px;
+}
+
+.section-text {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 2.22;
+}
+
+.img {
+	width: 50%;
+}
