@@ -197,9 +197,8 @@ svg {
 
 .section.section-faq {
 	position: relative;
-	padding-left: 240px;
-	padding-right: 0px;
-	height: 1500px;
+
+	height: 2000px;
 
 	background-image: url(../images/bcg-faq.png);
 	background-repeat: no-repeat;
@@ -236,33 +235,42 @@ svg {
 
 .faq-list {
 	list-style: none;
+
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0px;
 	padding: 0px;
 
 	position: absolute;
-    top: 735px;
-    left: 200px;
-	
+	top: 735px;
+	left: 200px;
+
+	max-width: 1125px;
 }
 
 .faq-item {
 	margin-right: 20px;
 	margin-bottom: 10px;
 	width: calc((100% - 20px) / 2);
-	
-	
+	display: flex;
+	align-items: center;
+	box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+	border-radius: 10px;
+}
+
+.faq-item:nth-child(2n) {
+	margin-right: 0px;
 }
 
 .faq-question {
+	display: block;
+
+	width: 550px;
 	margin: 0px;
 	font-weight: 500;
 	font-size: 18px;
 	line-height: 1.67;
 	color: #402b2b;
 	background-color: #fff;
-	padding: 25px 35px;
-	
-
+	padding: 25px 115px 25px 35px;
 }
