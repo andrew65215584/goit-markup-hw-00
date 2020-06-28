@@ -197,6 +197,7 @@ svg {
 }
 
 .block-faq {
+	position: relative;
 	padding-top: 240px;
 	padding-bottom: 240px;
 
@@ -220,12 +221,14 @@ svg {
 
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0px;
+	align-items: flex-end;
+	margin: 0px 0px 25px 0px;
 	padding: 0px;
 }
 
 .faq-item {
 	position: relative;
+	align-items: flex-end;
 	margin-right: 20px;
 	margin-bottom: 10px;
 	width: calc((100% - 20px) / 2);
@@ -241,12 +244,6 @@ svg {
 
 .faq-item:nth-child(2n) {
 	margin-right: 0px;
-}
-
-.faq-item:last-child {
-	background-color:#ed4d476e;
-	justify-content: center;
-	
 }
 
 .faq-item:hover {
@@ -276,4 +273,83 @@ svg {
 	width: 20px;
 	height: 20px;
 	background-image: url(../images/icon-plus.svg);
+}
+
+.faq-button {
+	position: absolute;
+	bottom: 160px;
+	right: 15px;
+	border: none;
+	border-radius: 10px;
+	padding: 30px;
+	background: #ed4d477d;
+
+	width: 575px;
+	height: 90px;
+
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 30px;
+	color: #ed4d47;
+}
+
+.faq-button::before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	background-image: url(../images/icon-plus.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.block-about-us {
+	padding-bottom: 150px;
+	padding-top: 150px;
+}
+
+.about-us-text {
+	font-family: DM Serif Display;
+	font-size: 48px;
+	line-height: 1.39;
+	color: #402b2b;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.about-us__list {
+	list-style: none;
+	display: flex;
+	padding-left: 0px;
+}
+
+.about-us__item {
+	width: 420px;
+	height: 360px;
+	background-color: #fff;
+	margin-right: 20px;
+	border-radius: 10px;
+	padding: 60px 50px 40px 50px;
+}
+
+.about-us__item:hover {
+	box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+}
+
+.about-us__text {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 1.87;
+	margin-top: 0px;
+	margin-bottom: 30px;
+}
+
+.about-us__content-container {
+	display: flex;
+}
+
+.about-us__name {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 1.87;
+	margin-left: 20px;
 }
