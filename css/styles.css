@@ -171,18 +171,19 @@ svg {
 }
 
 .notify-paragraph {
+	background: #ED4D4770;
+	padding: 30px 40px;
+	border-left: 10px solid #ed4d47;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.notify-text {
 	font-weight: 500;
 	font-size: 24px;
 	line-height: 1.5;
 	color: #402b2b;
 	margin: 0px;
-
-	background: #ED4D4770;
-
-	padding: 30px 40px;
-	border-left: 10px solid #ed4d47;
-	border-bottom-left-radius: 10px;
-	border-top-left-radius: 10px;
 }
 
 .block-how-to-apply {
@@ -372,18 +373,21 @@ svg {
 
 .footer-container {
 	padding-top: 100px;
-	padding-bottom: 250px;
-}
+	padding-bottom: 100px;
+} 
 
 .form-container {
 	display: flex;
 	align-items: center;
+	margin-bottom: 180px;
 }
 
 .notice-container {
 	color: white;
 	
-	border-left: #ed4d47;
+	border-left: 10px solid #ed4d47;
+	border-radius: 5px;
+	
 	padding: 40px 0px 40px 40px;
 	margin-right: 100px;
 }
@@ -440,6 +444,25 @@ svg {
 	color: #402b2b;
 }
 
+.footer .navigation{
+	padding: 0px;
+	margin: 0px;
+}
+
+.footer .navigation-list {
+	padding-right: 130px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.footer .navigation-item {
+	font-weight: normal;
+	font-style: normal;
+font-size: 16px;
+letter-spacing: 0.05em;
+
+}
+
 .footer-bottom {
 	display: flex;
 	padding-bottom: 100px;
@@ -449,7 +472,7 @@ svg {
 .social-list {
 	list-style: none;
 	margin: 0px;
-	padding: 0px;
+	padding: 0px 130px 0px 0px;
 	display: flex;
 	margin-left: auto;
 }
