@@ -303,7 +303,8 @@ svg {
 }
 
 .block-about-us {
-	padding-bottom: 150px;
+	position: relative;
+	padding-bottom: 300px;
 	padding-top: 150px;
 }
 
@@ -317,9 +318,13 @@ svg {
 }
 
 .about-us__list {
+	position: absolute;
+	right: -90px;
+	top: 225px;
 	list-style: none;
 	display: flex;
 	padding-left: 0px;
+	margin: 0px;
 }
 
 .about-us__item {
@@ -341,6 +346,7 @@ svg {
 	line-height: 1.87;
 	margin-top: 0px;
 	margin-bottom: 30px;
+	height: 170px;
 }
 
 .about-us__content-container {
@@ -352,4 +358,69 @@ svg {
 	font-size: 16px;
 	line-height: 1.87;
 	margin-left: 20px;
+}
+
+
+.footer {
+	width: 1600px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: 
+	 url(../images/footer-second-bg.png),
+	url(../images/footer-main-bg.jpg),
+	 url(../images/footer-bg-car.png);
+	background-repeat: no-repeat,no-repeat,no-repeat;
+	background-position: top 213px left 0px , left 0px top 210px, top 23px left 0px;
+}
+
+
+
+.footer-container{
+	padding-top: 350px;
+	padding-bottom: 350px;
+
+}
+
+
+
+
+
+
+
+.footer-bottom {
+	display: flex;
+	padding-bottom: 100px;
+	padding-top: 20px;
+}
+
+.social-list {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	display: flex;
+	margin-left: auto;
+}
+
+.social-item:not(:last-child){
+	margin-right: 30px;
+}
+
+.social-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background-color: red;
+}
+
+.social-icon {
+	fill: white;
+}
+
+.copyright {
+	padding: 0px;
+	margin: 0px;
+	font-weight: 300;
 }
