@@ -49,14 +49,12 @@ svg {
 	max-width: 1600px;
 	margin-left: auto;
 	margin-right: auto;
-	
+
 	background-color: var(--main-background);
-	background-image: 
-	url(../images/main-bcg.png), 
-	url(../images/mobel.png), 
-	linear-gradient(310.49deg, #FFEDBA 16.76%, #EE4D47 92%);
-	background-repeat: no-repeat,no-repeat,no-repeat;
-	background-position: 0 0,bottom left ,  0 0 ;
+	background-image: url(../images/main-bcg.png), url(../images/mobel.png),
+		linear-gradient(310.49deg, #ffedba 16.76%, #ee4d47 92%);
+	background-repeat: no-repeat, no-repeat, no-repeat;
+	background-position: 0 0, bottom left, 0 0;
 }
 
 .logo {
@@ -64,8 +62,6 @@ svg {
 	width: 212px;
 	height: 50px;
 	display: block;
-	
-	
 }
 
 .btn {
@@ -92,13 +88,12 @@ svg {
 	color: var(--header-title-and-bcg-item);
 	font-size: 100px;
 	line-height: 100%;
-	
+
 	width: 741px;
 	height: 300px;
 
 	margin-bottom: 60px;
 	margin-top: 0px;
-	
 }
 
 .navigation {
@@ -106,8 +101,6 @@ svg {
 	align-items: center;
 	padding-top: 40px;
 	margin-bottom: 90px;
-	
-	
 }
 
 .navigation-list {
@@ -118,7 +111,6 @@ svg {
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0;
-	
 }
 
 .navigation-item {
@@ -138,8 +130,7 @@ svg {
 	color: #ffffff;
 }
 
-
-.block-about{
+.block-about {
 	display: flex;
 	background-image: url(../images/image-1.png);
 	background-repeat: no-repeat;
@@ -149,14 +140,13 @@ svg {
 }
 
 .content-container {
-	
 	width: 45%;
 }
 
 .section {
 	max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .section:nth-child(3n) {
@@ -180,8 +170,6 @@ svg {
 	margin-bottom: 70px;
 }
 
-
-
 .notify-paragraph {
 	font-weight: 500;
 	font-size: 24px;
@@ -197,7 +185,6 @@ svg {
 	border-top-left-radius: 10px;
 }
 
-
 .block-how-to-apply {
 	padding-top: 120px;
 	padding-bottom: 150px;
@@ -209,31 +196,17 @@ svg {
 	margin-left: auto;
 }
 
-
-
-
-
-.block-faq{
-	
+.block-faq {
 	padding-top: 240px;
 	padding-bottom: 240px;
 
-	background-image: 
-	url(../images/delivery-man-why.png),
-	url(../images/delivery-man.png);
+	background-image: url(../images/delivery-man-why.png), url(../images/delivery-man.png);
 
 	background-repeat: no-repeat;
-	background-position: 
-	top 84px right 467px, 
-	top 61px right 40px ;
-	
+	background-position: top 84px right 467px, top 61px right 40px;
 }
 
-
-
-
 .faq-text {
-	
 	font-family: DM Serif Display;
 	font-size: 48px;
 	line-height: 1.39;
@@ -249,10 +222,6 @@ svg {
 	flex-wrap: wrap;
 	margin: 0px;
 	padding: 0px;
-
-	
-
-	
 }
 
 .faq-item {
@@ -268,41 +237,43 @@ svg {
 
 	display: flex;
 	align-items: center;
-	
 }
 
 .faq-item:nth-child(2n) {
 	margin-right: 0px;
 }
 
+.faq-item:last-child {
+	background-color:#ed4d476e;
+	justify-content: center;
+	
+}
+
 .faq-item:hover {
 	box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
 }
 
-
 .faq-question {
-
-	display: inline-block;
-	vertical-align: middle;
-    margin: 0px;
-    font-family: Rubik;
+	margin: 0px;
+	font-family: Rubik;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 18px;
-    line-height: 30px;
-    color: #402b2b;
-    
-    
+	line-height: 30px;
+	color: #402b2b;
+}
+
+.faq-question-last {
+	font-weight: 700;
+	color: #ed4d47;
 }
 
 .icon-plus {
 	position: absolute;
+	z-index: 100;
 	right: 35px;
-display: inline-block;
-width: 20px;
-height: 20px;
-background-image: url(../images/icon-plus.svg);
-
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url(../images/icon-plus.svg);
 }
-
-
