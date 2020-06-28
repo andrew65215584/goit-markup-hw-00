@@ -40,7 +40,7 @@ svg {
 	margin-right: auto;
 	padding-left: 15px;
 	padding-right: 15px;
-	outline: 5px solid red;
+	
 }
 
 .header {
@@ -371,8 +371,30 @@ svg {
 }
 
 .footer-container {
-	padding-top: 350px;
-	padding-bottom: 350px;
+	padding-top: 100px;
+	padding-bottom: 250px;
+}
+
+.form-container {
+	display: flex;
+	align-items: center;
+}
+
+.notice-container {
+	color: white;
+	
+	border-left: #ed4d47;
+	padding: 40px 0px 40px 40px;
+	margin-right: 100px;
+}
+
+.notice-text {
+	width: 330px;
+	margin: 0px;
+	line-height: 1.5;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
 }
 
 .footer-form {
@@ -414,7 +436,7 @@ svg {
 .form-field input:not(:placeholder-shown) {
 	font-weight: bold;
 	font-size: 18px;
-	
+	padding: 11px 40px;
 	color: #402b2b;
 }
 
