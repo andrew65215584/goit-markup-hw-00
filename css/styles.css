@@ -18,12 +18,12 @@ svg {
 }
 
 :root {
-	--main-background: #fcddd4;
+	--main-background: #fef8f5;
 	--header-title-and-bcg-item: white;
 	--accent-text: #ee4d47;
 }
 .page {
-	background: white;
+	background: var(--main-background);
 
 	font-family: Rubik;
 	font-size: 18px;
@@ -33,6 +33,9 @@ svg {
 }
 
 .container {
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 15px;
@@ -43,14 +46,14 @@ svg {
 .header {
 	position: relative;
 	height: 1195px;
-	width: 1600px;
+	max-width: 1600px;
 	margin-left: auto;
 	margin-right: auto;
-	outline: 5px solid red;
+	
 	background-color: var(--main-background);
-	background-image: linear-gradient(309deg, rgba(255, 237, 186, 1) 8%, rgba(238, 77, 71, 0.24723392775078779) 61%),
-		url(../images/scene.jpg);
-	background-repeat: no-repeat;
+	background-image: url(../images/scene.png), url(../images/mobel.png), linear-gradient(310.49deg, #FFEDBA 16.76%, #EE4D47 92%);
+	background-repeat: no-repeat,no-repeat,no-repeat;
+	background-position: 0 0,bottom left ,  0 0 ;
 }
 
 .logo {
@@ -58,9 +61,8 @@ svg {
 	width: 212px;
 	height: 50px;
 	display: block;
-	position: absolute;
-	left: 240px;
-	top: 50px;
+	
+	
 }
 
 .btn {
@@ -73,14 +75,13 @@ svg {
 	cursor: pointer;
 }
 
-.header-btn {
-	position: absolute;
-	left: 240px;
-	top: 580px;
-}
-
-.header-container {
-	display: flex;
+.arrow-icon {
+	display: inline-block;
+	width: 30px;
+	height: 12px;
+	background-image: url(../images/arrow-right.svg);
+	background-repeat: no-repeat;
+	margin-left: 23px;
 }
 
 .header-title {
@@ -88,23 +89,33 @@ svg {
 	color: var(--header-title-and-bcg-item);
 	font-size: 100px;
 	line-height: 100%;
-	position: absolute;
+	
 	width: 741px;
 	height: 300px;
-	left: 215px;
-	top: 170px;
+
+	margin-bottom: 60px;
+	margin-top: 0px;
+	
 }
 
 .navigation {
-	position: absolute;
-	left: 710px;
-	top: 40px;
+	display: flex;
+	align-items: center;
+	padding-top: 40px;
+	margin-bottom: 90px;
+	
+	
 }
 
 .navigation-list {
 	list-style: none;
 	display: flex;
 	align-items: center;
+	margin-left: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	
 }
 
 .navigation-item {
@@ -124,41 +135,31 @@ svg {
 	color: #ffffff;
 }
 
-.header__image--car {
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	display: block;
-}
 
-.header__image--scene {
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: block;
-}
-
-.header__image--people {
-	position: absolute;
-	left: 792px;
-	top: 444.78px;
-}
-.section {
-	width: 1600px;
-	padding: 150px 240px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: var(--main-background);
+.block-about{
 	display: flex;
-}
-
-.section:nth-child(2n) {
-	flex-direction: row-reverse;
+	background-image: url(../images/image-1.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	padding-top: 150px;
+	padding-bottom: 150px;
 }
 
 .content-container {
-	width: 470px;
-	width: 50%;
+	
+	width: 45%;
+}
+
+.section {
+	max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section:nth-child(3n) {
+	background-image: url(../images/bcg-faq.png);
+	background-repeat: no-repeat;
+	background-position: right 0;
 }
 
 .section-title {
@@ -176,9 +177,7 @@ svg {
 	margin-bottom: 70px;
 }
 
-.img {
-	width: 50%;
-}
+
 
 .notify-paragraph {
 	font-weight: 500;
@@ -195,38 +194,34 @@ svg {
 	border-top-left-radius: 10px;
 }
 
-.section.section-faq {
-	position: relative;
 
-	height: 2000px;
-
-	background-image: url(../images/bcg-faq.png);
+.block-how-to-apply {
+	padding-top: 120px;
+	padding-bottom: 150px;
+	background-image: url(../images/image-2.png);
 	background-repeat: no-repeat;
-	background-position: right 0;
 }
 
-.faq-image {
-	position: absolute;
-	top: 148px;
-	right: 110px;
+.block-how-to-apply .content-container {
+	margin-left: auto;
 }
 
-.faq-image-question {
-	position: absolute;
-	left: 788px;
-	top: 170px;
+
+
+
+
+.block-faq{
+	
+	/* background-image: url(../images/bcg-faq.png);
+	background-repeat: no-repeat; */
+	
 }
 
-.faq-title {
-	position: absolute;
-	left: 240px;
-	top: 285px;
-}
+
+
 
 .faq-text {
-	position: absolute;
-	left: 240px;
-	top: 330px;
+	
 	font-family: DM Serif Display;
 	font-size: 48px;
 	line-height: 1.39;
@@ -241,11 +236,9 @@ svg {
 	margin: 0px;
 	padding: 0px;
 
-	position: absolute;
-	top: 735px;
-	left: 200px;
+	
 
-	max-width: 1125px;
+	
 }
 
 .faq-item {
@@ -263,6 +256,7 @@ svg {
 }
 
 .faq-question {
+
 	display: block;
 
 	width: 550px;
@@ -274,3 +268,5 @@ svg {
 	background-color: #fff;
 	padding: 25px 115px 25px 35px;
 }
+
+
