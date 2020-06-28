@@ -51,7 +51,10 @@ svg {
 	margin-right: auto;
 	
 	background-color: var(--main-background);
-	background-image: url(../images/scene.png), url(../images/mobel.png), linear-gradient(310.49deg, #FFEDBA 16.76%, #EE4D47 92%);
+	background-image: 
+	url(../images/scene.png), 
+	url(../images/mobel.png), 
+	linear-gradient(310.49deg, #FFEDBA 16.76%, #EE4D47 92%);
 	background-repeat: no-repeat,no-repeat,no-repeat;
 	background-position: 0 0,bottom left ,  0 0 ;
 }
@@ -271,6 +274,11 @@ svg {
 .faq-item:nth-child(2n) {
 	margin-right: 0px;
 }
+
+.faq-item:hover {
+	box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+}
+
 
 .faq-question {
 
