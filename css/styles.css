@@ -52,7 +52,7 @@ svg {
 	
 	background-color: var(--main-background);
 	background-image: 
-	url(../images/scene.png), 
+	url(../images/main-bcg.png), 
 	url(../images/mobel.png), 
 	linear-gradient(310.49deg, #FFEDBA 16.76%, #EE4D47 92%);
 	background-repeat: no-repeat,no-repeat,no-repeat;
