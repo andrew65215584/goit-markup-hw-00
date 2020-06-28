@@ -218,7 +218,7 @@ svg {
 	background-image: 
 	url(../images/delivery-man-why.png),
 	url(../images/delivery-man.png);
-	
+
 	background-repeat: no-repeat;
 	background-position: 
 	top 84px right 467px, 
@@ -258,8 +258,9 @@ svg {
 	width: calc((100% - 20px) / 2);
 	display: flex;
 	align-items: center;
-	box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+	padding: 25px;
 	border-radius: 10px;
+	background-color: #fff;
 }
 
 .faq-item:nth-child(2n) {
@@ -268,16 +269,19 @@ svg {
 
 .faq-question {
 
-	display: block;
-
-	width: 550px;
-	margin: 0px;
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 1.67;
-	color: #402b2b;
-	background-color: #fff;
-	padding: 25px 115px 25px 35px;
+	
+    margin: 0px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.67;
+    color: #402b2b;
+    background-color: #fff;
+    
 }
 
+.icon-plus {
+display: block;
+width: 20px;
+height: 20px;
+}
 
