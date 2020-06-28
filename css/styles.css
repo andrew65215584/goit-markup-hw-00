@@ -212,8 +212,17 @@ svg {
 
 .block-faq{
 	
-	/* background-image: url(../images/bcg-faq.png);
-	background-repeat: no-repeat; */
+	padding-top: 240px;
+	padding-bottom: 240px;
+
+	background-image: 
+	url(../images/delivery-man-why.png),
+	url(../images/delivery-man.png);
+	
+	background-repeat: no-repeat;
+	background-position: 
+	top 84px right 467px, 
+	top 61px right 40px ;
 	
 }
 
@@ -226,6 +235,8 @@ svg {
 	font-size: 48px;
 	line-height: 1.39;
 	color: #402b2b;
+	margin-top: 0px;
+	margin-bottom: 170px;
 }
 
 .faq-list {
