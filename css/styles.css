@@ -17,17 +17,22 @@ svg {
 	height: auto;
 }
 
+a {
+	display: block;
+}
+
 :root {
 	--main-background: #fef8f5;
 	--header-title-and-bcg-item: white;
 	--accent-text: #ee4d47;
+	--main-color-text: #402b2b;
 }
 .page {
 	background: var(--main-background);
 
 	font-family: Rubik;
 	font-size: 18px;
-	color: #402b2b;
+	color: var(--main-color-text);
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -38,9 +43,6 @@ svg {
 	padding-right: 15px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 15px;
-	padding-right: 15px;
-	
 }
 
 .header {
@@ -56,14 +58,12 @@ svg {
 	background-repeat: no-repeat, no-repeat, no-repeat;
 	background-position: 0 0, bottom left, 0 0;
 }
-
 .logo {
 	fill: white;
 	width: 212px;
 	height: 50px;
 	display: block;
 }
-
 .btn {
 	background: #ee4d47;
 	border-radius: 5px;
@@ -73,7 +73,6 @@ svg {
 	font-weight: bold;
 	cursor: pointer;
 }
-
 .arrow-icon {
 	display: inline-block;
 	width: 30px;
@@ -82,27 +81,22 @@ svg {
 	background-repeat: no-repeat;
 	margin-left: 23px;
 }
-
 .header-title {
 	font-family: DM Serif Display;
 	color: var(--header-title-and-bcg-item);
 	font-size: 100px;
 	line-height: 100%;
-
 	width: 741px;
 	height: 300px;
-
 	margin-bottom: 60px;
 	margin-top: 0px;
 }
-
 .navigation {
 	display: flex;
 	align-items: center;
 	padding-top: 40px;
 	margin-bottom: 90px;
 }
-
 .navigation-list {
 	list-style: none;
 	display: flex;
@@ -112,7 +106,6 @@ svg {
 	margin-bottom: 0;
 	padding-left: 0;
 }
-
 .navigation-item {
 	font-weight: bold;
 	font-size: 16px;
@@ -120,16 +113,13 @@ svg {
 	letter-spacing: 0.05em;
 	font-style: normal;
 }
-
 .navigation-item:not(:last-child) {
 	margin-right: 90px;
 }
-
 .navigation-link {
 	text-decoration: none;
 	color: #ffffff;
 }
-
 .block-about {
 	display: flex;
 	background-image: url(../images/image-1.png);
@@ -138,15 +128,8 @@ svg {
 	padding-top: 150px;
 	padding-bottom: 150px;
 }
-
 .content-container {
 	width: 45%;
-}
-
-.section {
-	max-width: 1600px;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .section:nth-child(3n) {
@@ -154,22 +137,18 @@ svg {
 	background-repeat: no-repeat;
 	background-position: right 0;
 }
-
 .section-title {
 	margin: 0px;
 	color: var(--accent-text);
 	margin-bottom: 40px;
 }
-
 .section-text {
-	
 	font-weight: 300;
 	font-size: 18px;
 	line-height: 2.22;
 	margin-top: 0px;
 	margin-bottom: 70px;
 }
-
 .notify-paragraph {
 	background: #ED4D4770;
 	padding: 30px 40px;
@@ -177,7 +156,6 @@ svg {
 	border-bottom-left-radius: 10px;
 	border-top-left-radius: 10px;
 }
-
 .notify-text {
 	font-weight: 500;
 	font-size: 24px;
@@ -185,48 +163,38 @@ svg {
 	color: #402b2b;
 	margin: 0px;
 }
-
 .block-how-to-apply {
 	padding-top: 120px;
 	padding-bottom: 150px;
 	background-image: url(../images/image-2.png);
 	background-repeat: no-repeat;
 }
-
 .block-how-to-apply .content-container {
 	margin-left: auto;
 }
-
 .block-faq {
 	position: relative;
 	padding-top: 240px;
 	padding-bottom: 240px;
-
 	background-image: url(../images/delivery-man-why.png), url(../images/delivery-man.png);
-
 	background-repeat: no-repeat;
 	background-position: top 84px right 467px, top 61px right 40px;
 }
-
 .faq-text {
 	font-family: DM Serif Display;
 	font-size: 48px;
 	line-height: 1.39;
-	color: #402b2b;
 	margin-top: 0px;
 	margin-bottom: 170px;
 }
-
 .faq-list {
 	list-style: none;
-
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-end;
 	margin: 0px 0px 25px 0px;
 	padding: 0px;
 }
-
 .faq-item {
 	position: relative;
 	align-items: flex-end;
@@ -235,22 +203,17 @@ svg {
 	width: calc((100% - 20px) / 2);
 	height: 90px;
 	padding: 15px 115px 15px 35px;
-
 	border-radius: 10px;
 	background-color: #fff;
-
 	display: flex;
 	align-items: center;
 }
-
 .faq-item:nth-child(2n) {
 	margin-right: 0px;
 }
-
 .faq-item:hover {
 	box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
 }
-
 .faq-question {
 	margin: 0px;
 	font-family: Rubik;
@@ -260,12 +223,10 @@ svg {
 	line-height: 30px;
 	color: #402b2b;
 }
-
 .faq-question-last {
 	font-weight: 700;
 	color: #ed4d47;
 }
-
 .icon-plus {
 	position: absolute;
 	z-index: 100;
@@ -275,7 +236,6 @@ svg {
 	height: 20px;
 	background-image: url(../images/icon-plus.svg);
 }
-
 .faq-button {
 	position: absolute;
 	bottom: 160px;
@@ -284,16 +244,13 @@ svg {
 	border-radius: 10px;
 	padding: 30px;
 	background: #ed4d477d;
-
 	width: 575px;
 	height: 90px;
-
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 30px;
 	color: #ed4d47;
 }
-
 .faq-button::before {
 	content: "";
 	width: 20px;
@@ -302,13 +259,11 @@ svg {
 	background-repeat: no-repeat;
 	background-size: contain;
 }
-
 .block-about-us {
 	position: relative;
 	padding-bottom: 300px;
 	padding-top: 150px;
 }
-
 .about-us-text {
 	font-family: DM Serif Display;
 	font-size: 48px;
@@ -317,7 +272,6 @@ svg {
 	margin-top: 0px;
 	margin-bottom: 0px;
 }
-
 .about-us__list {
 	position: absolute;
 	right: -90px;
@@ -327,7 +281,6 @@ svg {
 	padding-left: 0px;
 	margin: 0px;
 }
-
 .about-us__item {
 	width: 420px;
 	height: 360px;
@@ -336,11 +289,9 @@ svg {
 	border-radius: 10px;
 	padding: 60px 50px 40px 50px;
 }
-
 .about-us__item:hover {
 	box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
 }
-
 .about-us__text {
 	font-weight: 300;
 	font-size: 16px;
@@ -349,49 +300,39 @@ svg {
 	margin-bottom: 30px;
 	height: 170px;
 }
-
 .about-us__content-container {
 	display: flex;
 }
-
 .about-us__name {
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 1.87;
 	margin-left: 20px;
 }
-
 .footer {
-	width: 1600px;
 	margin-right: auto;
 	margin-left: auto;
+}
+.footer-container {
+	padding-top: 100px;
+	padding-bottom: 100px;
 	background-image: url(../images/footer-second-bg.png), url(../images/footer-main-bg.jpg),
 		url(../images/footer-bg-car.png);
 	background-repeat: no-repeat, no-repeat, no-repeat;
 	background-position: top 213px left 0px, left 0px top 210px, top 23px left 0px;
 }
-
-.footer-container {
-	padding-top: 100px;
-	padding-bottom: 100px;
-} 
-
 .form-container {
 	display: flex;
 	align-items: center;
 	margin-bottom: 180px;
 }
-
 .notice-container {
 	color: white;
-	
 	border-left: 10px solid #ed4d47;
 	border-radius: 5px;
-	
 	padding: 40px 0px 40px 40px;
 	margin-right: 100px;
 }
-
 .notice-text {
 	width: 330px;
 	margin: 0px;
@@ -400,7 +341,6 @@ svg {
 	font-weight: normal;
 	font-size: 20px;
 }
-
 .footer-form {
 	width: 550px;
 	height: 440px;
@@ -408,11 +348,9 @@ svg {
 	border-radius: 10px;
 	padding: 52px 75px;
 }
-
 .form-field {
 	display: flex;
 	flex-direction: column;
-
 	font-family: Rubik;
 	font-style: normal;
 	font-weight: 300;
@@ -420,55 +358,44 @@ svg {
 	line-height: 2.5;
 	color: #402b2b;
 }
-
 .form-field label {
 	margin-bottom: 10px;
 }
-
 .form-field input {
 	margin-bottom: 30px;
 	padding: 11px 40px;
 }
-
 .form-field input:focus {
 	border: 3px solid #ee4d47;
-
 	box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.2);
 	border-radius: 5px;
 }
-
 .form-field input:not(:placeholder-shown) {
 	font-weight: bold;
 	font-size: 18px;
 	padding: 11px 40px;
 	color: #402b2b;
 }
-
-.footer .navigation{
+.footer .navigation {
 	padding: 0px;
 	margin: 0px;
 }
-
 .footer .navigation-list {
 	padding-right: 130px;
 	padding-bottom: 10px;
 	padding-top: 10px;
 }
-
 .footer .navigation-item {
 	font-weight: normal;
 	font-style: normal;
-font-size: 16px;
-letter-spacing: 0.05em;
-
+	font-size: 16px;
+	letter-spacing: 0.05em;
 }
-
 .footer-bottom {
 	display: flex;
 	padding-bottom: 100px;
 	padding-top: 80px;
 }
-
 .social-list {
 	list-style: none;
 	margin: 0px;
@@ -476,11 +403,9 @@ letter-spacing: 0.05em;
 	display: flex;
 	margin-left: auto;
 }
-
 .social-item:not(:last-child) {
 	margin-right: 30px;
 }
-
 .social-links {
 	display: flex;
 	justify-content: center;
@@ -490,11 +415,9 @@ letter-spacing: 0.05em;
 	border-radius: 50%;
 	background-color: red;
 }
-
 .social-icon {
 	fill: white;
 }
-
 .copyright {
 	padding: 0px;
 	margin: 0px;
